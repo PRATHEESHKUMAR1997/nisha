@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from './core/dashboard/layout/layout.component';
+import { LayoutComponent } from './future/layout/layout.component';
 import { LoginComponent } from './core/components/auth/login/login.component';
 import { ForgetComponent } from './core/components/auth/forget/forget.component';
 import { ForgetPasswordVerificationComponent } from './core/components/auth/forget-password-verification/forget-password-verification.component';

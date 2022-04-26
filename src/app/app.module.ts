@@ -10,8 +10,8 @@ import { AngularMaterialModule } from './modules/material/angular-material/angul
 import { LayoutModule } from '@angular/cdk/layout';
 import { ForgetComponent } from './core/components/auth/forget/forget.component';
 import { ResetComponent } from './core/components/auth/reset/reset.component';
-import { LayoutComponent } from './core/dashboard/layout/layout.component';
-import { SideNavigationComponent } from './core/dashboard/side-navigation/side-navigation.component';
+import { LayoutComponent } from './future/layout/layout.component';
+import { SideNavigationComponent } from './future/side-navigation/side-navigation.component';
 import { ForgetPasswordVerificationComponent } from './core/components/auth/forget-password-verification/forget-password-verification.component';
 @NgModule({
   declarations: [
