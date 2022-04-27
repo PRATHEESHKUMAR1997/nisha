@@ -4,7 +4,7 @@ import { LoginComponent } from './core/components/auth/login/login.component';
 import { ForgetComponent } from './core/components/auth/forget/forget.component';
 import { ForgetPasswordVerificationComponent } from './core/components/auth/forget-password-verification/forget-password-verification.component';
 import { ResetComponent } from './core/components/auth/reset/reset.component';
-import { LayoutComponent } from './futurs/layout/layout.component';
+import { LayoutComponent } from './futures/family/components/layout/layout.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},

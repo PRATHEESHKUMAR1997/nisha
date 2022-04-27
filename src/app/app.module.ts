@@ -6,16 +6,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './modules/angular-material.module';
-import { LayoutModule } from '@angular/cdk/layout';
-import { CoreModuleModule } from './core/modules/core-module/core-module.module';
-import { LayoutComponent } from './futurs/layout/layout.component';
-import { FutureModule } from './futurs/module/future.module';
-import { SideNavigationComponent } from './futurs/side-navigation/side-navigation.component';
+import { FamilyModule } from './futures/family/family.module';
+import { ForgetComponent } from './core/components/auth/forget/forget.component';
+import { ForgetPasswordVerificationComponent } from './core/components/auth/forget-password-verification/forget-password-verification.component';
+import { LoginComponent } from './core/components/auth/login/login.component';
+import { ResetComponent } from './core/components/auth/reset/reset.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
-    SideNavigationComponent
+    ForgetComponent,
+    ForgetPasswordVerificationComponent,
+    LoginComponent,
+    ResetComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +26,7 @@ import { SideNavigationComponent } from './futurs/side-navigation/side-navigatio
     BrowserAnimationsModule,
     ReactiveFormsModule,
     AngularMaterialModule,
-    LayoutModule,
-    CoreModuleModule,
-    FutureModule
+    FamilyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
