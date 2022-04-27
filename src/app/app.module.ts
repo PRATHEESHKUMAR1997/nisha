@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './modules/angular-material.module';
 import { FamilyModule } from './futures/family/family.module';
+import { LayoutComponent } from './futures/family/components/layout/layout.component';
 import { ForgetComponent } from './core/components/auth/forget/forget.component';
 import { ForgetPasswordVerificationComponent } from './core/components/auth/forget-password-verification/forget-password-verification.component';
 import { LoginComponent } from './core/components/auth/login/login.component';
