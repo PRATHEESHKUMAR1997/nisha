@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'otp-verification', component: ForgetPasswordVerificationComponent},
   {path: 'reset-password', component: ResetComponent},
   {path: 'app', component: LayoutComponent, children: [
+    {path: '', component: DashboardComponent},
     {path: 'dashboard', component: DashboardComponent},
     {path: 'user-list', component: UserListComponent}
   ]}

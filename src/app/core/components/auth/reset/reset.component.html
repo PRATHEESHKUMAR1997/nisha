@@ -1,0 +1,30 @@
+<div class="h-screen w-screen flex items-center justify-center">
+    
+    <div class="w-1/4 shadow-2xl p-5 rounded">
+        <h1>Reset Password</h1>
+        <div class="example-container">
+           
+
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>New Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" [formControl]="newPassword">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" [formControl]="confirmPassword">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+        </div>
+        
+        <button mat-raised-button color="primary" class="w-full" routerLink="/app">Change</button>
+        
+    </div>
+    
+</div>

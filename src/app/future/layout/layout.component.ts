@@ -1,5 +1,6 @@
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable, map, shareReplay } from 'rxjs';
 
 @Component({
@@ -15,7 +16,7 @@ export class LayoutComponent implements OnInit {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, private route: Router) {}
 
   ngOnInit(): void {
   }
