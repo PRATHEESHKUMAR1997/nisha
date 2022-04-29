@@ -1,0 +1,52 @@
+<div class="m-10 bg-white p-10 rounded-md shadow">
+    <h1>Profile Information</h1>
+    <form [formGroup]="profileForm" (ngSubmit)="submitProfileForm()">
+        <div class="example-container flex gap-3">
+
+            <mat-form-field appearance="outline" class="w-full" >
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="userName">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Mobile</mat-label>
+                <input matInput formControlName="userMobile">
+            </mat-form-field>
+        </div>
+        <div class="example-container flex gap-3">
+
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>DOB</mat-label>
+                <input matInput formControlName="userDob">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Gender</mat-label>
+                <input matInput formControlName="userGender">
+            </mat-form-field>
+        </div>
+        <div class="example-container flex gap-3">
+
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Blood Group</mat-label>
+                <input matInput formControlName="userBloodGroup">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>PinCode</mat-label>
+                <input matInput formControlName="userPinCode">
+            </mat-form-field>
+        </div>
+        <div class="example-container flex gap-3">
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Address</mat-label>
+                <textarea  matInput formControlName="userAddress"></textarea>
+            </mat-form-field>
+            
+            <div></div>
+        </div>
+        <div class="example-button-row text-right">
+            <button mat-raised-button color="warn" class="mr-2 w-20">Reset</button>
+            <button mat-raised-button color="primary" class="w-20" type="submit" [disabled]="!profileForm.valid">Submit</button>
+
+            
+        </div>
+    </form>
+</div>
